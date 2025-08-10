@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>solar system</title>
+    
+  </head>
+  <body>
+
+  
+    <div class="w-full h-screen overflow-hidden">
+     
+     <div class="w-full h-screen top-0 left-0 z-[2] absolute text-white">
+      <nav class="w-full flex items-center justify-between py-8 px-8 text-xl">
+        <h3>Planets</h3>
+        <div class="flex gap-8">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+
+      <div class="absolute top-[15%] left-1/2 -translate-x-1/2 text-center">
+        <div class="w-full h-[10em] relative">
+           <h1 class="heading absolute inset-0 text-7xl md:text-9xl font-light tracking-tighter flex items-center justify-center">Mercury</h1>
+           <h1 class="heading absolute inset-0 text-7xl md:text-9xl font-light tracking-tighter flex items-center justify-center opacity-0">Mars</h1>
+           <h1 class="heading absolute inset-0 text-7xl md:text-9xl font-light tracking-tighter flex items-center justify-center opacity-0">jupitar</h1>
+           <h1 class="heading absolute inset-0 text-7xl md:text-9xl font-light tracking-tighter flex items-center justify-center opacity-0">Earth</h1>
+        </div>
+        <p class="text-md mt-4">Explore the planets of our solar system</p>
+     <div class="w-96 h-px bg-gradient-to-r from-transparent via-white to-transparent mt-4"></div>
+
+      </div>
+     </div>
+        <canvas id="canvas"></canvas>
+    </div>
+     
+   
+
+
+
+
+    <script type="module" src="/src/main.js"></script>
+   
+  </body>
+</html>
