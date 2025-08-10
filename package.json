@@ -1,14 +1,17 @@
 {
   "name": "solar",
+  "homepage": "https://reemkhan09.github.io/solar_system/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+      "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.11",
     "vite": "^7.0.0"
   },
@@ -23,3 +26,5 @@
   "license": "ISC",
   "description": ""
 }
+
+
