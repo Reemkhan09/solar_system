@@ -1,5 +1,4 @@
 
-// Import necessary libraries
 import * as THREE from 'three';
 import './style.css';
 
