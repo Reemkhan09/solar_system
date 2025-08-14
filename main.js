@@ -39,15 +39,16 @@ camera.position.z = 10;
 const radius = 1;
 const segments = 64;
 const colors = [0xff0000, 0x00ff00, 0x0000ff, 0xffff00];
-const textures = ["2_no_clouds_16k.jpeg",
-   "2k_mars.jpg",
-   "mercurytex.avif","jupi_2.avif"];
+const textures = [ `${import.meta.env.BASE_URL}public/2_no_clouds_16k.jpeg`,
+  `${import.meta.env.BASE_URL}public/2k_mars.jpg`,
+  `${import.meta.env.BASE_URL}public/mercurytex.avif`,
+  `${import.meta.env.BASE_URL}public/jupi_2.avif`];
 
 const spheres = new THREE.Group();
 
 // Create a large sphere with a stars texture
 
-const starTexture = new THREE.TextureLoader().load('stars.jpg');
+const starTexture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}public/stars.jpg`);
 
 starTexture.colorSpace = THREE.SRGBColorSpace;
 const starGeometry = new THREE.SphereGeometry(50, 64, 64);
